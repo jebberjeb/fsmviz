@@ -12,6 +12,10 @@ Generate [Graphviz]() diagrams from FSM data using Clojure or Clojurescript.
 
 ## Usage
 
+Diagrams can be generated using FSM data in the form of either `[from via to]`
+triples, or maps of state -> transition map.
+
+
 ```clojure
 (require '[fsmviz.core :as fsmviz])
 ```
