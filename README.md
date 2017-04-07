@@ -24,7 +24,7 @@ Generate [Graphviz]() diagrams from FSM data using Clojure or Clojurescript.
 
 ```
 
-![fsmmap](example-map.svg)
+![fsmmap](example-map.png)
 
 ```clojure
 (fsmviz.core/generate-image [[:start :t1 :x]
@@ -36,7 +36,7 @@ Generate [Graphviz]() diagrams from FSM data using Clojure or Clojurescript.
                              [:y :t7 :finish]] "example-tuples"))
 ```
 
-![fsmtuples](example-tuples.svg)
+![fsmtuples](example-tuples.png)
 
 ## License
 
