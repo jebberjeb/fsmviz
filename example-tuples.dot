@@ -1,0 +1,15 @@
+0: digraph {
+1: rankdir=LR;
+2: start->x [label=":t1",style=null,constraint=true,dir=null];
+3: start->y [label=":t2",style=null,constraint=true,dir=null];
+4: start->z [label=":t3",style=null,constraint=true,dir=null];
+5: z->x [label=":t4",style=null,constraint=true,dir=null];
+6: z->finish [label=":t5",style=null,constraint=true,dir=null];
+7: x->finish [label=":t6",style=null,constraint=true,dir=null];
+8: y->finish [label=":t7",style=null,constraint=true,dir=null];
+9: start [shape=circle,label="",style=filled,fillcolor="#000000", height=0.25,width=0.25
+10:           ];
+11: finish [shape=doublecircle,label="finish",style=null,fillcolor="null", height=null,width=null
+12:           ];
+13: 
+14: }
