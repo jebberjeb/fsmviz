@@ -1,7 +1,7 @@
 (ns fsmviz.core
   (:require
     [clojure.set :as set]
-    [clojure.spec :as s]
+    [clojure.spec.alpha :as s]
     [specviz.graphviz :as graphviz]))
 
 (s/def ::fsm-tuple (s/tuple any? any? any?))

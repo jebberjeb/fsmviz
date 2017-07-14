@@ -3,8 +3,8 @@
   :url "https://github.com/jebberjeb/fsmviz"
   :license {:name "MIT"}
 
-  :dependencies [[org.clojure/clojure "1.9.0-alpha14"]
-                 [org.clojure/clojurescript "1.9.293"]
-                 [specviz "0.2.2"]]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha17"]
+                 [org.clojure/clojurescript "1.9.671"]
+                 [specviz "0.2.3"]]
 
   :source-paths ["src"])
