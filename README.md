@@ -57,6 +57,11 @@ fsmviz.core.generate_image(
 
 See [example.html](resources/example.html) for a complete example.
 
+## TODO
+
+The Javascript binary is 2.6 MB, currently.  Largely due to the depenency on
+viz.js, which is 2.1 MB.  Can this be improved?
+
 ## License
 
 The MIT License (MIT)
