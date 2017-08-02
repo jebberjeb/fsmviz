@@ -7,7 +7,7 @@ Generate [Graphviz]() diagrams from FSM data using Clojure or Clojurescript.
 ### Leiningen
 
 ```clojure
-[fsmviz "0.1.1"]
+[fsmviz "0.1.2"]
 ```
 
 ## Usage
@@ -41,6 +41,21 @@ triples, or maps of state -> transition map.
 ```
 
 ![fsmtuples](example-tuples.png)
+
+## Javascript API
+
+You can also use this library from Javascript. You must use the tuple form for
+state machine data, and string names, rather than keywords.
+
+```javascript
+fsmviz.core.generate_image(
+        [[null,     "birth",       "human"],
+         ["human",  "bitten",      "zombie"],
+         ["zombie", "brain death", "corpse"]],
+        "a graph name");
+```
+
+See [example.html](resources/example.html) for a complete example.
 
 ## License
 

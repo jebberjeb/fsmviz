@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head><title>JS API Example</title></head>
+    <body>
+      <div id="app"></div>
+      <script type="text/javascript" src="out/fsmviz.js"></script>
+      <script type="text/javascript">
+        var svg = fsmviz.core.generate_image(
+                [[null, "birth", "human"],
+                 ["human", "bitten", "zombie"],
+                 ["zombie", "brain death", "corpse"]],
+                "filename");
+        console.log(svg);
+        document.getElementById("app").innerHTML = svg;
+      </script>
+    </body>
+</html>

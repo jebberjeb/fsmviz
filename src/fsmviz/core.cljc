@@ -85,13 +85,26 @@
 
 (s/fdef generate-image :args (s/cat :state-data ::fsm
                                     :filename string?))
-(defn generate-image
+
+;; TODO this won't handle cursors
+#?(:cljs
+   (defn transform-js-data
+     [state-data]
+     (mapv (fn [row]
+             (mapv (fn [x] (if (string? x)
+                             (keyword x)
+                             x))
+                   row))
+           (js->clj state-data))))
+
+(defn ^:export generate-image
   "Creates <filename>.svg, using the state map provided.
 
   `state-data` a map of state -> transition map, or a colletion of
                [from via to] triples."
   [state-data filename]
   (-> state-data
+      #?(:cljs transform-js-data)
       fsm->graphviz
       graphviz/dot-string
       (graphviz/generate-image! filename)))
