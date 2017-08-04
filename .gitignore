@@ -1,1 +1,4 @@
 target/
+.cljs_node_repl/
+.classpath
+resources/out/
