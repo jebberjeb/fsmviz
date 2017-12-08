@@ -42,7 +42,18 @@ triples, or maps of state -> transition map.
 
 ![fsmtuples](example-tuples.png)
 
-## Javascript API
+## Clojurescript Demo
+
+A simple demo with Clojurescript, created using Figwheel, can be found at
+examples/demo-cljs. To run the demo:
+
+`cd examples/demo-cljs`
+`$> lein fighweel`
+
+After the Figwheel webserver starts, visit `http://localhost:3449` to view the
+demo.
+
+## Javascript Demo & API
 
 You can also use this library from Javascript. You must use the tuple form for
 state machine data, and string names, rather than keywords.

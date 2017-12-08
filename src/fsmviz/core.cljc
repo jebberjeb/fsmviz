@@ -97,17 +97,23 @@
                    row))
            (js->clj state-data))))
 
-(defn ^:export generate-image
+(defn generate-image
   "Creates <filename>.svg, using the state map provided.
 
   `state-data` a map of state -> transition map, or a colletion of
-               [from via to] triples."
+  [from via to] triples."
   [state-data filename]
   (-> state-data
-      #?(:cljs transform-js-data)
       fsm->graphviz
       graphviz/dot-string
       (graphviz/generate-image! filename)))
+
+#?(:cljs
+   (defn ^:export generate-image-js
+     "Like `generate-image`, but exported for direct invocation from Javascript.
+     `state-data` must be in tuple form."
+     [state-data filename]
+     (generate-image (transform-js-data state-data) filename)))
 
 (comment
   (fsmviz.core/generate-image {:start {:t1 :foo

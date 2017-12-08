@@ -1,4 +1,4 @@
-(defproject fsmviz "0.1.2"
+(defproject fsmviz "0.1.3"
   :description "Generate Graphviz diagrams from FSM data."
   :url "https://github.com/jebberjeb/fsmviz"
   :license {:name "MIT"}
