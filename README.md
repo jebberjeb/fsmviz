@@ -7,7 +7,7 @@ Generate [Graphviz]() diagrams from FSM data using Clojure or Clojurescript.
 ### Leiningen
 
 ```clojure
-[fsmviz "0.1.2"]
+[fsmviz "0.1.3"]
 ```
 
 ## Usage
@@ -48,6 +48,7 @@ A simple demo with Clojurescript, created using Figwheel, can be found at
 examples/demo-cljs. To run the demo:
 
 `cd examples/demo-cljs`
+
 `$> lein fighweel`
 
 After the Figwheel webserver starts, visit `http://localhost:3449` to view the
