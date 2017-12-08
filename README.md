@@ -47,7 +47,7 @@ triples, or maps of state -> transition map.
 A simple demo with Clojurescript, created using Figwheel, can be found at
 examples/demo-cljs. To run the demo:
 
-`cd examples/demo-cljs`
+`$> cd examples/demo-cljs`
 
 `$> lein fighweel`
 
