@@ -60,7 +60,7 @@ You can also use this library from Javascript. You must use the tuple form for
 state machine data, and string names, rather than keywords.
 
 ```javascript
-fsmviz.core.generate_image(
+fsmviz.core.generate_image_js(
         [[null,     "birth",       "human"],
          ["human",  "bitten",      "zombie"],
          ["zombie", "brain death", "corpse"]],
