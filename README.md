@@ -7,7 +7,7 @@ Generate [Graphviz]() diagrams from FSM data using Clojure or Clojurescript.
 ### Leiningen
 
 ```clojure
-[fsmviz "0.1.3"]
+[fsmviz "0.1.4"]
 ```
 
 ## Usage

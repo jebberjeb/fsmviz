@@ -1,4 +1,5 @@
 target/
 .cljs_node_repl/
 .classpath
-resources/out/
+resources/out/*
+!resources/out/fsmviz.js
